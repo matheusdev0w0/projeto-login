@@ -1,0 +1,21 @@
+
+/*Configurações Globais*/
+* {
+    padding: 0;
+    margin: 0;
+}
+body, html {
+    height: 100vh;
+}
+
+/*
+Paleta de cores 
+
+        Verde : #49a09d
+        lilás : #5f2c82
+
+*/
+:root {
+    --verde:  #49a09d;
+    --lilás: #5f2c82;
+}
