@@ -41,6 +41,7 @@ section#login {
 
     background-color: white;
     border-radius: 20px;
+    transition: width 0.3s, height 0.3s;
     
 
 }
@@ -52,7 +53,7 @@ section#login > #imagem {
     background-position: center center;
     background-size: cover;
 }
-section#formulario {
-    
+section > #formulario {
+    padding: 30px;
     display: block;
 }
