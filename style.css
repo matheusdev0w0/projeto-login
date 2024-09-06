@@ -8,7 +8,7 @@
 }
 body, html {
     height: 100vh;
-    background-color: #5f2c82;
+    background-color: #0d8dd6;
 }
 
 /*
@@ -29,8 +29,9 @@ section#login {
 
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+
     transition: all 0.2s;
+    transform: translate(-50%, -50%);
 }
 section#login > #imagem {
     background-image: url(imagens/imagem-login.jpg);
@@ -57,11 +58,23 @@ section#login > #formulario p {
     width: 100%;
     height: 40px;
 
-    background-color: #d4f4fa;
+    background-color: #87ccd8;
  }
 
 div.campo > label {
     display: none;
+}
+div.campo input{
+
+    width: 80%;
+    height: 35px;
+    border: 0;
+    border-radius: 8px;
+    transform: translateY(-6px);
+}
+div.campo span {
+    padding: 8px;
+    height: 35px;
 }
 
 form > input[type=submit] {
