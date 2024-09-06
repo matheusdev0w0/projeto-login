@@ -8,7 +8,7 @@
 }
 body, html {
     height: 100vh;
-    background-color: var(--lilás);
+    background-color: #5f2c82;
 }
 
 /*
@@ -18,42 +18,82 @@ Paleta de cores
         lilás : #5f2c82
 
 */
-:root {
-    --verde:  #49a09d;
-    --lilás: #5f2c82;
-}
-main {
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-}
 section#login {
-
-    box-shadow: 1px 1px 9px 2px black;
-    overflow: hidden;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-
-    width: 250px;
+    width: 260px;
     height: 600px;
-
     background-color: white;
-    border-radius: 20px;
-    transition: width 0.3s, height 0.3s;
-    
+    position: absolute;     
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 1px 1px 14px 3px black;
 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.2s;
 }
 section#login > #imagem {
-    display: block;
-    background-image: url(../imagens/imagem-login.jpg);
-    height: 200px;
+    background-image: url(imagens/imagem-login.jpg);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: left;
     background-size: cover;
+    height: 250px;
 }
-section > #formulario {
-    padding: 30px;
+section#login > #formulario {
+    padding: 10px;
+
+}
+section#login > #formulario h1 {
+    font-size: 1.5em;
+    text-align: center;
+}
+section#login > #formulario p {
+    font-size: 0.8em;
+}
+ form div.campo {
+    margin: 10px 0px;
+    border-radius: 10px;
+
+    width: 100%;
+    height: 40px;
+
+    background-color: #d4f4fa;
+ }
+
+div.campo > label {
+    display: none;
+}
+
+form > input[type=submit] {
+
+    height: 35px;
+    background-color: #3aabbe;
+    color: white;
+    padding: 5px;
+    width: 100%;
+    border-radius: 10px;
+    border: 0;
+
+}
+form > input[type=submit]:hover {
+    cursor: pointer;
+    background-color: #30818f;
+}
+form > a.botao {
+    margin-top: 10px;
+    padding-top: 5px;
+    border-radius: 10px;
     display: block;
+    text-align: center;
+    font-size: 1em;
+
+    width: 100%;
+    height: 35px;
+
+    text-decoration: none;
+    border: 1px solid black;
+}
+form > a.botao:hover {
+    background-color: #30818f;
+    color: white;
 }
